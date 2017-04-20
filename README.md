@@ -1,4 +1,4 @@
-#DGen
+# DGen
 
 DGen is a Python module for the generation (and degeneration) of synthetic 
 clinical data.
@@ -18,7 +18,7 @@ data most commonly encountered in epidemiology. DGen users can extend this
 `Person` to create more complex participants with data representing their 
 [*Book Of Life*](https://books.google.co.uk/books?id=1iI5rHtCT-4C&lpg=PA180&ots=2kMSde3-kq&dq=%22book%20of%20life%22%20epidemiology&pg=PA180#v=onepage&q=%22book%20of%20life%22%20epidemiology&f=false) events.
 
-##Quickstart
+## Quickstart
 This quickstart covers the two basic packages of DGen:
 
 1. Data Generators
@@ -118,7 +118,7 @@ Finally, data generators can be *XORed" together:
 generally, `P1 XOR P2 XOR P3 . . . Pn`.
 
 
-###Data Degeneration
+### Data Degeneration
 Similarly to the above examples, let's create a fictional postcode variable 
 that suffers from punctuation errors:
 
