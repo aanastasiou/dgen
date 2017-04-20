@@ -24,7 +24,7 @@ This quickstart covers the two basic packages of DGen:
 1. Data Generators
 2. Data Perturbators
 
-###Data Generation
+### Data generation
 To create a fictional postcode variable that conforms loosely to the UK
 standard of postcodes:
 
@@ -38,7 +38,7 @@ a **model** for postcodes that are composed of 2 letters 2 numbers 2 letters.
 
 To obtain **an instance** of the model, the model is simply *called* (`postCode()`).
 
-#### Other Generators
+#### Other generators
 
 At the moment, the following generators have been defined:
 
@@ -118,7 +118,7 @@ Finally, data generators can be *XORed" together:
 generally, `P1 XOR P2 XOR P3 . . . Pn`.
 
 
-### Data Degeneration
+### Data degeneration
 Similarly to the above examples, let's create a fictional postcode variable 
 that suffers from punctuation errors:
 
@@ -142,7 +142,7 @@ to suffer a punctuation error.
 For more information on the specific data perturbation scenarios modeled by DGen, 
 please see [Linking Data for Health Services Research: A Framework and Instructional Guide](https://www.ncbi.nlm.nih.gov/books/NBK253312/).
 
-#### Other Degenerators
+#### Other degenerators
 
 At the moment, the following degenerators have been defined:
 
