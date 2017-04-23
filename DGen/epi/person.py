@@ -25,11 +25,21 @@ class Person(randomDataGenerator):
        This class abstracts an individual in a population and 
        initialises it with a number of attributes that are commonly encountered in Epidemiology"""
     
-    def __init__(self, ageMin=18, ageMax=65, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super(Person, self).__init__()
         
-        self._ageMin = ageMin
-        self._ageMax = ageMax
+        try:
+            self._ageMin = kwargs["ageMin"]
+        except KeyError:
+            self._ageMin = 18
+            
+        try:
+            self._ageMax = kwargs["ageMax"]
+        except KeyError:
+            self._ageMax = 65
+            
+        #self._ageMin = ageMin
+        #self._ageMax = ageMax
                     
         #Demographic data
         self._Identifier = uidGenerator().setVarName("PATID")

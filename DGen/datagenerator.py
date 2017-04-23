@@ -384,7 +384,7 @@ class condProbOptionGenerator(compositeConditionalGenerator):
             This is the only elementary data generator, whose evaluation
             requires a parameter.
         """
-        return givenEvent + self._options[givenEvent]()
+        return self._options[givenEvent]()
             
 
 class archivedOptionGenerator(optionGenerator):

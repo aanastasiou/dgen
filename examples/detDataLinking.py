@@ -9,6 +9,7 @@ from DGen.epi.person import Person
 from DGen.epi.utils import StreetNames
 import bunch
 import sys
+import pandas
 
 class Participant(Person):
     """Abstracts a participant. Participants can be of any age between parameters
@@ -18,7 +19,10 @@ class Participant(Person):
         """In addition to ageMin, ageMax it also adds probOfDeath"""
         super(Participant, self).__init__(self, *args, **kwargs)
         #Add DeathRecord if dead       
-        self._probOfDeath = probOfDeath
+        try:
+            self._probOfDeath = kwargs["probOfDeath"]
+        except KeyError:
+            self._probOfDeath = 0.1
         self._deathCertificate = []
          
     def __call__(self):
